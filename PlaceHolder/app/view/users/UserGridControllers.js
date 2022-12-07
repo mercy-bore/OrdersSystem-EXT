@@ -1,10 +1,10 @@
-Ext.define('PlaceHolder.view.posts.PostGridController', {
+Ext.define('PlaceHolder.view.users.UserGridController', {
     //! extend: Ext.app.ViewController
     extend: 'Ext.app.ViewController',
     //! controller.controllername
-    alias: 'controller.postgridcontroller',
+    alias: 'controller.usergridcontroller',
 
-    onAddNewPost: function () {
+    onAddNewUser: function () {
         //1.
         // Ext.create('PlaceHolder.view.main.PostForm');
         this.showForm(null);
@@ -13,7 +13,7 @@ Ext.define('PlaceHolder.view.posts.PostGridController', {
 
     },
    
-    onAddPostMouseOver: function () {
+    onAdduserMouseOver: function () {
         console.log("Mouse over");
 
     },
@@ -26,10 +26,10 @@ Ext.define('PlaceHolder.view.posts.PostGridController', {
 
     },
     //! refactor logic
-    showForm: function (postId) {
-        console.log(postId);
+    showForm: function (userId) {
+        console.log(userId);
         Ext.create({
-            xtype: 'postform' //symbolic name
+            xtype: 'userform' //symbolic name
         });
         //load form, details using the id
     },

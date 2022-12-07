@@ -62,9 +62,10 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
             }
 
         },
+       
         {
             xtype: 'button',
-            text: 'View Details',
+            text: 'View Post Details',
 
             //* registering default event handlers => click
             handler: 'onViewDetails'
@@ -87,8 +88,9 @@ Ext.define('PlaceHolder.view.posts.PostGrid', {
         },
         {
             xtype: 'button',
-            text: 'Third Last'
-        },
+            text: 'Form Fields',
+            handler: 'onFormFiledsDemo'
+                },
         {
             xtype: 'button',
             text: 'Second Last'

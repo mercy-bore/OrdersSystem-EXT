@@ -5,7 +5,7 @@ Ext.define('PlaceHolder.store.Users', {
     model: 'PlaceHolder.model.User',
     proxy: {
         type: 'rest',
-        url: 'https://jsonplaceholder.typicode.com/users',
+        url: 'http://3.126.66.68:3000/users',
         reader: {
             type: 'json',
             totalProperty: 'totalCount', //
