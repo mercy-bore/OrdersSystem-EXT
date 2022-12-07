@@ -44,4 +44,4 @@ Ext.define('PlaceHolder.view.todos.TodoGrid', {
         },
     ]
 
-})
+});

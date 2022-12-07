@@ -1,12 +1,11 @@
-Ext.define('PlaceHolder.store.Posts', {
+Ext.define('PlaceHolder.store.Albums', {
     extend: 'Ext.data.Store',
-    alias: 'store.posts',
-    storeId: 'posts',
-    model: 'PlaceHolder.model.Post',
+    alias: 'store.albums',
+    storeId: 'albums',
+    model: 'PlaceHolder.model.Album',
     proxy: {
         type: 'rest',
-        url: 'https://jsonplaceholder.typicode.com/posts',
-        // url: 'http://localhost:3000/posts',
+        url: 'https://jsonplaceholder.typicode.com/albums',
         reader: {
             type: 'json',
             totalProperty: 'totalCount', //
@@ -25,5 +24,5 @@ Ext.define('PlaceHolder.store.Posts', {
         }
     ],
     groupField: 'userId',
-    pageSize: 10
+    pageSize: 5
 });

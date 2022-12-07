@@ -21,10 +21,9 @@ Ext.define('PlaceHolder.view.main.MainView', {
                 xtype: 'panel',
                 title: 'Albums',
                 scrollable: true, // make scrolling bars available
-                //Albums
-                items: [
-                    // albumsgrid
-                ]
+                items: [{
+                    // xtype: 'albumgrid'
+                }]
             },
             {
                 //object type to instantiate
@@ -34,8 +33,17 @@ Ext.define('PlaceHolder.view.main.MainView', {
                 items: [{
                     xtype: 'postgrid'
                 }]
-            }
-
+            },
+         
+            {
+                //object type to instantiate
+                xtype: 'panel',
+                title: 'Users',
+                scrollable: true, // make scrolling bars available
+                items: [{
+                    xtype: 'usergrid'
+                }]
+            },
         ]
     },
 

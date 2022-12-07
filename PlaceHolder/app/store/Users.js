@@ -1,12 +1,11 @@
-Ext.define('PlaceHolder.store.Posts', {
+Ext.define('PlaceHolder.store.Users', {
     extend: 'Ext.data.Store',
-    alias: 'store.posts',
-    storeId: 'posts',
-    model: 'PlaceHolder.model.Post',
+    alias: 'store.users',
+    storeId: 'users',
+    model: 'PlaceHolder.model.User',
     proxy: {
         type: 'rest',
-        url: 'https://jsonplaceholder.typicode.com/posts',
-        // url: 'http://localhost:3000/posts',
+        url: 'https://jsonplaceholder.typicode.com/users',
         reader: {
             type: 'json',
             totalProperty: 'totalCount', //
@@ -16,7 +15,7 @@ Ext.define('PlaceHolder.store.Posts', {
     },
     autoLoad: true,
     sorters: [{
-            property: 'userId',
+            property: 'name',
             direction: 'ASC'
         },
         {
@@ -24,6 +23,6 @@ Ext.define('PlaceHolder.store.Posts', {
             direction: 'DESC'
         }
     ],
-    groupField: 'userId',
-    pageSize: 10
+    groupField: 'name',
+    pageSize: 5
 });
