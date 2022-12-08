@@ -14,24 +14,16 @@ Ext.define('PlaceHolder.view.users.UserForm', {
         layout: 'form',
         reference: 'userdetailsform',
         jsonSubmit: true,
+        scrollable: true, // make scrolling bars available
         //items of the form container
-        items: [{
-                xtype: 'numberfield',
-                name: 'id',
-                reference: 'id',
-                fieldLabel: 'Id'
-            },
+        items: [
             {
                 xtype: 'textfield',
                 name: 'name',
                 fieldLabel: 'Name',
                 allowBlank: false  // requires a non-empty value
             },
-            {
-                xtype: 'textfield',
-                fieldLabel: 'Username',
-                name: 'username'
-            },
+           
             {
                 xtype: 'textfield',
                 fieldLabel: 'Email',
@@ -55,7 +47,8 @@ Ext.define('PlaceHolder.view.users.UserForm', {
                 // using the altFormat and displayed using the format.
                 format: 'm d Y',
                 altFormats: 'm,d,Y|m.d.Y',
-                value:new Date()
+                maxValue:new Date(),
+                minValue:new Date()
             },
             {
                 xtype: 'numberfield',
