@@ -87,8 +87,7 @@ Ext.define('PlaceHolder.view.users.UserForm', {
                 xtype: 'checkbox',
                 fieldLabel: 'Exams',
                 boxLabel  : 'Done',
-                boxLabel  : 'Done',
-                name      : 'topping',
+                name      : 'done',
                 inputValue: '2',
                 id        : 'checkbox1'
             }, 

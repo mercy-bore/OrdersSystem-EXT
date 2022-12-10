@@ -26,8 +26,19 @@ Ext.define('PlaceHolder.store.Todos', {
             // rootProperty
         }
     },
+    autoLoad: true,
+    sorters: [{
+            property: 'userId',
+            direction: 'ASC'
+        },
+        {
+            property: 'id',
+            direction: 'DESC'
+        }
+    ],
+    groupField: 'userId',
+    pageSize: 10
     //* initiate the request to get data automaticall on application load
-    autoLoad: true
 
 
 

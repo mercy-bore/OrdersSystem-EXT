@@ -42,6 +42,14 @@ Ext.define('PlaceHolder.view.todos.TodoGrid', {
             text: 'Completed', //* displayable label of the column
             dataIndex: 'completed'
         },
-    ]
+    ],
+
+    bbar: {
+        xtype: 'pagingtoolbar',
+        displayInfo: true,
+        displayMsg: 'Display posts {0} - {1} of {2}',
+        emptyMsg: 'No post to display',
+    },
+
 
 });

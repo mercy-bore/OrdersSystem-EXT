@@ -19,6 +19,17 @@ Ext.define('PlaceHolder.model.User', {
             name: 'email',
             type: 'string'
         },
+
+        
+
+        {
+            name: "address", //calculated field from the data
+            convert: function (value, record) {
+                console.dir(record)
+                return record.get("street") + "-" + record.get("city")
+
+            }
+        }
     ],
 
-})
+});
