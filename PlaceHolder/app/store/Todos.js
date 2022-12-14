@@ -19,6 +19,8 @@ Ext.define('PlaceHolder.store.Todos', {
     //! proxy
 
     proxy: {
+        // url : 'http://3.126.66.68:3000/todos',
+
         url: 'https://jsonplaceholder.typicode.com/todos/',
         type: 'rest',
         reader: {

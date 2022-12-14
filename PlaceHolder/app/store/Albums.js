@@ -5,6 +5,7 @@ Ext.define('PlaceHolder.store.Albums', {
     model: 'PlaceHolder.model.Album',
     proxy: {
         type: 'rest',
+        // url : 'http://3.126.66.68:3000/albums',
         url: 'https://jsonplaceholder.typicode.com/albums',
         reader: {
             type: 'json',

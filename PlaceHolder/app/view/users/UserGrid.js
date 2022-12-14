@@ -12,6 +12,7 @@ Ext.define('PlaceHolder.view.users.UserGrid', {
     //         groupHeaderTpl: '{columnName}: {name} ({rows.length} Post{[values.rows.length > 1 ? "s" : ""]})'
     //     },
 
+
     // ],
 
     selModel: 'checkboxmodel', ///alternative specifying the selection model
@@ -61,15 +62,27 @@ Ext.define('PlaceHolder.view.users.UserGrid', {
 
     tbar: [
 
+        
         {
-            xtype: 'button',
-            text: 'Add New User',
-            listeners: {
-                //! eventname:'functionName in the controller
-                click: 'onAddNewUser',
-                mouseover: 'onAddUserMouseOver'
-            }
+        text: 'Add new User',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUser'
+        },
+        {
+            text: 'Add new User with Columns',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUserWithColumns'
+        },
+        {
+            text: 'Add new User with Vbox and HBox',
+            iconCls: 'x-fa fa-plus',
+            handler: 'onAddNewUserWithVboxHbox'
+        },
 
+        {
+            text: 'View Details',
+            iconCls: 'x-fa fa-eye',
+            handler: 'onViewDetails'
         },
        
         {
@@ -92,27 +105,6 @@ Ext.define('PlaceHolder.view.users.UserGrid', {
             emptyText: 'Search',
 
         },
-        {
-            xtype: 'tbfill'
-        },
-        {
-            xtype: 'button',
-            text: 'Form Fields',
-            handler: 'onFormFiledsDemo'
-                },
-        {
-            xtype: 'button',
-            text: 'Second Last'
-        },
-        {
-            xtype: 'button',
-            text: 'Last'
-        }
-
+    
     ]
-
-
-
-
-
 });
