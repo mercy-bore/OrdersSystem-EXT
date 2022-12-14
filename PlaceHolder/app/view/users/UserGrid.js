@@ -62,7 +62,11 @@ Ext.define('PlaceHolder.view.users.UserGrid', {
 
     tbar: [
 
-        
+        {
+            text: 'User',
+                iconCls: 'x-fa fa-plus',
+                handler: 'onUser'
+            },
         {
         text: 'Add new User',
             iconCls: 'x-fa fa-plus',

@@ -26,5 +26,5 @@ Ext.define('PlaceHolder.store.Users', {
         }
     ],
     groupField: 'name',
-    pageSize: 5
+    pageSize: 10
 });

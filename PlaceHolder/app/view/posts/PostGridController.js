@@ -1,4 +1,4 @@
-Ext.define('PlaceHolder.view.posts.PostGridController', {
+ Ext.define('PlaceHolder.view.posts.PostGridController', {
     //! extend: Ext.app.ViewController
     extend: 'Ext.app.ViewController',
     //! controller.controllername

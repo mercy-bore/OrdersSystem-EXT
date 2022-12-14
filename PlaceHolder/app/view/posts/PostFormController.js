@@ -18,10 +18,10 @@ Ext.define('PlaceHolder.view.posts.PostFormController', {
 
             // url: 'http://3.126.66.68:3000/posts', //actual endpoint
             success: function (form, action) {
-                alert("saved sucessfully" + action.result)
+                alert("saved sucessfully " + action.result.msg)
             },
             failure: function (form, action) {
-                alert("saved sucessfully" + action.result)
+                alert("failed " + action.result.msg)
             },
 
         });

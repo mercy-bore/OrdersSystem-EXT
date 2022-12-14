@@ -14,6 +14,7 @@ Ext.define('PlaceHolder.view.todos.TodoGrid', {
         //? Todo -> todos
         type: 'todos'
     },
+    selModel: 'checkboxmodel', ///alternative specifying the selection model
 
     // ! columns
     columns: [
@@ -25,7 +26,9 @@ Ext.define('PlaceHolder.view.todos.TodoGrid', {
             "title": "delectus aut autem",
             "completed": false
         }*/
-
+        {
+            xtype: 'rownumberer'
+        },
         {
             text: 'User ID', //* displayable label of the column
             dataIndex: 'userId'

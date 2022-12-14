@@ -22,7 +22,7 @@ Ext.define('PlaceHolder.view.main.MainView', {
                 title: 'Albums',
                 scrollable: true, // make scrolling bars available
                 items: [{
-                    // xtype: 'albumgrid'
+                     xtype: 'albumgrid'
                 }]
             },
             {

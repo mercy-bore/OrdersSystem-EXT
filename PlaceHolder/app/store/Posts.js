@@ -5,9 +5,9 @@ Ext.define('PlaceHolder.store.Posts', {
     model: 'PlaceHolder.model.Post',
     proxy: {
         type: 'rest',
-        // url : 'http://3.126.66.68:3000/posts',
+        url : 'http://3.126.66.68:3000/posts',
 
-        url: 'https://jsonplaceholder.typicode.com/posts',
+        // url: 'https://jsonplaceholder.typicode.com/posts',
         reader: {
             type: 'json',
             totalProperty: 'totalCount', //

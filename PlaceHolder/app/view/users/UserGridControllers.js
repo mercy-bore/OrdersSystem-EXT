@@ -12,6 +12,14 @@ Ext.define('PlaceHolder.view.users.UserGridController', {
 
 
     },
+    onUser: function () {
+        //1.
+        // Ext.create('PlaceHolder.view.main.PostForm');
+        this.showMyForm(null);
+
+
+
+    },
    
     onAdduserMouseOver: function () {
         console.log("Mouse over");
@@ -48,6 +56,12 @@ Ext.define('PlaceHolder.view.users.UserGridController', {
     showForm: function (userId) {
         Ext.create({
             xtype: 'userformwindow'
+        });
+        //if userId is not null -> prefill the form with data
+    },
+    showMyForm: function (userId) {
+        Ext.create({
+            xtype: 'userform'
         });
         //if userId is not null -> prefill the form with data
     },

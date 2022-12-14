@@ -36,16 +36,7 @@ Ext.define('PlaceHolder.view.posts.PostForm', {
                 fieldLabel: 'Body',
                 name: 'body'
             },
-            {
-                xtype: 'filefield',
-                name: 'photo',
-                fieldLabel: 'Photo',
-                labelWidth: 50,
-                msgTarget: 'side',
-                allowBlank: false,
-                anchor: '100%',
-                buttonText: 'Select Photo...'
-            },
+            
             {
                 xtype: 'timefield',
                 name: 'in',
